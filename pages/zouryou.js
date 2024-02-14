@@ -67,7 +67,7 @@ export default function Home() {
           </div>
           <div className={zStyles.shK}>
             <Iframe
-              url="https://embed.nicovideo.jp/watch/sm42238300?persistence=1&amp;oldScript=1&amp;referer=http%3A%2F%2Flocalhost%3A3000%2F&amp;from=0&amp;allowProgrammaticFullScreen=1"
+              url="https://embed.nicovideo.jp/watch/sm42238300"
               width="568px"
               height="319px"
               id=""
