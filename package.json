@@ -1,0 +1,26 @@
+{
+  "name": "tan-ml",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "14.0.4",
+    "@types/node": "20.10.5",
+    "@types/react": "18.2.45",
+    "@types/react-dom": "18.2.18",
+    "dayjs": "^1.11.10",
+    "next": "14.0.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-iframe": "^1.8.5",
+    "react-youtube": "^10.1.0",
+    "rss-parser": "^3.13.0",
+    "sass": "^1.69.5",
+    "typescript": "5.3.3"
+  }
+}

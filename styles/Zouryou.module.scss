@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "m";
+    src: url("../fonts/MPLUS1p-Regular.ttf");
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Ubuntu";
+    src: url("../fonts/Ubuntu-Medium.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+.main {
+    background-image: url("/images/zouryou/background.webp");
+}
+.intro {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 35px;
+    padding: 0px 10px;
+    text-align: center;
+    img {
+        width: 230px;
+    }
+    p {
+        margin-top: 10px;
+        font-family: "m";
+        transform: rotate(0.03deg);
+        color: rgb(48, 48, 48);
+    }
+    .install {
+        margin-top: 20px;
+        display: inline-flex;
+        text-align: left;
+    }
+    a {
+        text-decoration: none;
+    }
+    .installButton {
+        width: 170px;
+        height: 50px;
+        background: rgb(237, 244, 250);
+        box-shadow: rgba(82, 83, 83, 0.397) 0px 0px 2px;
+        border-radius: 100em;
+        padding: 10px;
+        display: flex;
+        img {
+            width: 30px;
+        }
+        p {
+            margin-top: 5px;
+            margin-left: 5px;
+            font-family: "Ubuntu";
+        }
+        :hover {
+            cursor: pointer;
+        }
+        &.firefox {
+            margin-left: 30px;
+            background: rgb(255, 244, 227);
+        }
+        &.github {
+            p {
+                margin-left: 4px;
+            }
+
+            background: rgba(255, 255, 255, 0.856);
+        }
+    }
+}
+.shK {
+    text-align: center;
+    Iframe {
+        margin: 0 auto;
+        box-shadow: black 0px 0px 2px;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+        }
+    }
+    img {
+        @media screen and (max-width: 768px) {
+            width: 95%;
+        }
+        border-radius: 1em;
+        width: 60%;
+        box-shadow: #00000024 0px 0px 7px;
+    }
+}

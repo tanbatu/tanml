@@ -1,0 +1,268 @@
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Medium.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "m";
+  src: url("../fonts/MPLUS1p-Regular.ttf");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "m-m";
+  src: url("../fonts/MPLUS1p-Medium.ttf");
+  font-style: normal;
+}
+.main {
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  height: 60px;
+  @media screen and (max-width: 768px) {
+    padding: 5px;
+    margin-top: 5px;
+    zoom: 0.8;
+    transform-origin: left top;
+  }
+  @media screen and (max-width: 448px) {
+    padding: 5px;
+    zoom: 0.7;
+  }
+}
+
+.list {
+  display: flex;
+  margin-top: 10px;
+  a {
+    font-family: "Ubuntu";
+    display: flex;
+    margin-left: 90px;
+    margin-right: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(61, 61, 61);
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 815px) {
+      margin-left: 40px;
+    }
+    @media screen and (max-width: 448px) {
+      margin-left: 10px;
+    }
+  }
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    margin-left: -5%;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 5%;
+  }
+}
+@keyframes slideIn2 {
+  0% {
+    opacity: 0;
+    bottom: -50px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0px;
+  }
+}
+
+.card {
+  position: relative;
+  transform: rotate(0.05deg);
+  margin: 0 auto;
+  margin-top: 20px;
+  overflow: hidden;
+  width: 98%;
+  height: 200px;
+  background-color: rgb(105, 105, 105);
+  border-radius: 15px;
+  background-image: url("/images/bk.png");
+  @media screen and (max-width: 768px) {
+    height: 150px;
+    margin-top: 15px;
+  }
+
+  @media screen and (max-width: 448px) {
+    height: 100px;
+  }
+  .text {
+    @media screen and (max-width: 768px) {
+      transform: scale(0.7) translateY(-50%);
+      transform-origin: top left;
+    }
+    @media screen and (max-width: 448px) {
+      transform: scale(0.5) translateY(-50%);
+      transform-origin: top left;
+      max-width: 100%;
+    }
+    animation: slideIn 1s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    font-family: "m";
+    max-width: 50%;
+    margin-left: 5%;
+    h1 {
+      font-family: "m-m";
+      font-size: 30px;
+      color: white;
+      font-weight: 500;
+    }
+    p {
+      font-size: 15px;
+      color: white;
+
+      @media screen and (max-width: 448px) {
+        font-size: 19px;
+      }
+    }
+  }
+  .image {
+    animation: slideIn2 1s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: auto;
+    height: 100%;
+  }
+}
+
+.middle {
+  display: flex;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+  .left {
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+
+    margin-top: 20px;
+    padding: 10px;
+    width: 70%;
+    .flex {
+      margin-bottom: -40px;
+      display: flex;
+      @media screen and (max-width: 768px) {
+        justify-content: space-between;
+      }
+    }
+  }
+  .right {
+    margin-top: 20px;
+    padding: 10px;
+    width: 30%;
+    .youtube {
+      iframe {
+        width: 100%;
+        height: auto;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+
+.snsbutton {
+  position: relative;
+  display: flex;
+
+  width: 45%;
+  margin-right: 5%;
+  height: 150px;
+  @media screen and (max-width: 768px) {
+    position: relative;
+    transform-origin: top left;
+    display: flex;
+
+    transform: scale(0.87);
+
+    height: 125px;
+  }
+  @media screen and (max-width: 448px) {
+    transform: scale(0.73);
+    margin-right: 0px;
+  }
+  .text {
+    font-family: "Ubuntu";
+    padding-left: 30px;
+    padding-top: 0px;
+    h3 {
+      font-size: 25px;
+
+      color: rgb(34, 34, 34);
+    }
+    p {
+      color: rgb(133, 133, 133);
+      font-size: 18px;
+    }
+  }
+  a {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50%;
+  }
+}
+
+.headline {
+  font-family: "Ubuntu";
+  font-size: 25px;
+  color: rgb(22, 22, 22);
+  border-bottom: rgb(56, 56, 56) 2px solid;
+}
+
+.collab {
+  transform: rotate(0.05deg);
+  display: flex;
+  border-bottom: rgb(161, 161, 161) 0.5px dotted;
+  font-family: m;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  p {
+    width: 70%;
+  }
+}
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.note {
+  transform: rotate(0.05deg);
+  border-bottom: rgb(161, 161, 161) 0.5px dotted;
+  font-family: m;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 2px;
+  padding: 12px 0px;
+}
+
+.footer {
+  font-family: "m";
+  padding: 0px 10px;
+  position: sticky;
+  top: 100vh;
+  width: 100%;
+  color: gray;
+}
