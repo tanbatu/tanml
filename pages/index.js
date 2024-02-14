@@ -31,7 +31,7 @@ export default function Home() {
           <div className={styles.left}>
             <div className={styles.flex}>
               <Snsbutton
-                platform={"Twitter"}
+                platform={"X"}
                 id={"@tanbatsu"}
                 link={"https://twitter.com/tanbatsu"}
               ></Snsbutton>
